@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun playMusic() {
-        AudioTogglePlugin().setAudioMode("normal", this)
+        AudioTogglePlugin().setAudioMode("speaker", this)
         mediaPlayer = MediaPlayer.create(applicationContext, R.raw.ruladeti)
         mediaPlayer?.start()
     }
